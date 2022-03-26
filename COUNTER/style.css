@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;                /* this command is used before aligning the items */
+    justify-content: center;      /* this is used to moved the content at center horizontally*/
+    align-items: center;          /* this is to align vertically*/ 
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.container{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;       /*  this is to align the items one by one*/
+    border-radius: 25px;
+    position: relative;
+}
+.count{
+    font-size: 3rem;
+}
+button{
+    width: 50px;               /*if we call generally no full stop is used*/
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+.incre{
+    right: -10%;              /*moving that button to right side*/
+    box-shadow: 1px 2px 3px rgba(0,0,0,.2);
+}
+.decre{
+    left: -10%;
+    box-shadow: -1px 2px 3px rgba(0,0,0,.2);
+}
